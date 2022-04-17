@@ -1,0 +1,138 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+}
+
+/* navbar */
+.sidebar{
+  height: 100vh;  /* this means height=100% of the viewport and will be stretch for all the screen sizes; */
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url(images/img1.jpeg); /* rgba(red, green, blue, alpha) - (alpha = how dark the color should be displayed) */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 7px 25px #999; 
+  /* provides shadow to the element 
+  {
+    SYNTAX: 
+    box-shadow: inset(optional) (+/-)x-offset (+/-)y-offset blur-radius(optional) spread-radius(optional) color 
+      - (inset = border shadow in-wards)
+
+    box-shadow: 3px, 5px green, 4px 6px red = multiple box shadow on an element. for multiple shadow separate the values using comma
+  } 
+  */
+}
+
+.bottom-border{
+  border-bottom: 1px groove #eee;
+}
+
+.sidebar-link{
+  transition: all .4s;
+}
+
+.sidebar-link:hover{
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.current{
+  background-color: #f44336;
+  border-radius: 7px;
+  box-shadow: 2px 5px 10px #111;
+  transition: all .3s;
+}
+
+.current:hover{
+  background-color: #f66436;
+  border-radius: 7px;
+  box-shadow: 2px 5px 10px #111;
+  transform: translateY(-1px);
+}
+
+.search-input{
+  background: transparent;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid #999;
+  transition: all .4s;
+}
+
+.search-input:focus{
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 2px solid #dc3545;
+}
+
+.search-button{
+  border-radius: 50%;
+  padding: 10px 16px;
+  transition: all .4s;
+}
+
+.search-button:hover{
+  background-color: #eee;
+  transform: translateY(-1px);
+}
+
+.icon-parent{
+  position: relative;
+}
+
+.icon-bullet::after{
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  height: 12px;
+  width: 12px;
+  background-color: #f44336;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .sidebar{
+    position: static;
+    height: auto;
+  }
+
+  .top-navbar{
+    position: static;
+  }
+}
+/* end of navbar */
+
+/* card */
+.card-common{
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+
+.card-common:hover{
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+/* end of card */
+
+/* task lists */
+.task-border{
+  border-left: 3px solid #f44336;
+}
+/* end of task lists */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
